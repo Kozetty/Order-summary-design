@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+:root {
+    --guide-border: 1px solid black;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/pattern-background-desktop.svg) ;
+}
+p {
+    font-size: 1.6rem;
+}
+/* Base styles end here */
+
+
+/* Main container card */
+.card {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: hsl(225, 100%, 98%);
+}
+
+/* Header section */
+.card__header {
+    width: 100%;
+}
+.card-hero-image {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Order summary section */
+.summary-container {
+    width: 330px;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.summary-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    color: hsl(223, 47%, 15%);
+}
+.summary-description {
+    padding-bottom: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* Subscription plan section */
+.subscription-plan-container {
+    padding: 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 96%);
+}
+.subscription-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    line-height: 1.4;
+}
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(223, 47%, 15%);
+}
+.change-button {
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+    background-color: hsl(225, 100%, 97%);
+    color: hsl(245, 75%, 52%);
+    transition: color 0.3s ease;
+}
+.change-button:hover {
+    color: hsl(245, 75%, 68%);
+}
+
+
+/* Proceed to payment button section */
+.payment-btns {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.pay--btn {
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    transition: background-color 0.3s ease;
+}
+.pay--btn:hover {
+    background-color: hsl(245, 75%, 65%);
+}
+.cancel--btn {
+    color: hsl(224, 23%, 55%);
+    background-color: hsl(225, 100%, 98%);
+    transition: color 0.3s ease;
+}
+.cancel--btn:hover {
+    color: hsl(223, 47%, 15%);
+}
+
+/* Desktop responsiveness */
+
+@media screen and (min-width: 500px){
+    .card {
+        max-width: 350px;
+    }
+    .summary-container {
+        width: 300px;
+    }
+    .summary-title {
+        font-size: 2.2rem;
+    }
+    .summary-description {
+        
+        font-size: 1.4rem;
+    }
+    .plan-container {
+        font-size: 1.3rem;
+    }
+    .change-button {
+        font-size: 1.3rem;
+    }
+    .payment-btns {
+        padding: 1.3rem;
+        font-size: 1.3rem;
+    }
+}

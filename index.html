@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Order Summary</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Main container card -->
+    <div class="card">
+      <!-- Header section -->
+      <header class="card__header">
+        <img
+          class="card-hero-image"
+          src="Images/illustration-hero.svg"
+          alt="Hero image"
+        />
+      </header>
+
+      <!-- Order summary section -->
+      <div class="summary-container">
+        <!-- order summary title -->
+        <h1 class="summary-title">Order Summary</h1>
+        <!-- order-description -->
+        <p class="summary-description">
+          You can now listen to millions of <br />
+          songs, audiobooks, and podcasts on <br />
+          any device anywhere you like!
+        </p>
+        <!-- Subscription plan section -->
+        <div class="subscription-plan-container">
+          <span class="subscription-type">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+                <path
+                  fill="#717FA6"
+                  fill-rule="nonzero"
+                  d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+                />
+              </g>
+            </svg>
+            <div class="plan-container">
+              <span>Annual Plan</span>
+              <span style="color: hsl(224, 23%, 55%); font-weight: 500"
+                >$59.99/year</span
+              >
+            </div>
+          </span>
+          <button class="change-button"><span>Change</span></button>
+        </div>
+        <!-- Proceed to payment button section -->
+        <button class="payment-btns pay--btn">Proceed to Payment</button>
+        <button class="payment-btns cancel--btn">Cancel Order</button>
+      </div>
+    </div>
+  </body>
+</html>
