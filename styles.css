@@ -16,7 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/pattern-background-desktop.svg) ;
+    background: url(Images/pattern-background-desktop.svg) #E1E9Ff no-repeat;
+    background-size: contain;
 }
 p {
     font-size: 1.6rem;
